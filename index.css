@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes dropCoin {
+  0% {
+    transform: translateY(-150px) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFade {
+  0% { 
+    opacity: 0; 
+    transform: translate(-50%, -40px); 
+  }
+  20% { 
+    opacity: 1; 
+    transform: translate(-50%, 0); 
+  }
+  80% { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 0; 
+    transform: translate(-50%, 40px); 
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+}
+
+@keyframes searchProgress {
+  0% { width: 0%; }
+  25% { width: 30%; }
+  50% { width: 60%; }
+  75% { width: 85%; }
+  100% { width: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
