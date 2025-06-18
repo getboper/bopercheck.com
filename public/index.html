@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoperCheck - Instant AI Price Analysis</title>
+    <meta name="description" content="Get AI-powered price comparisons to find the best deals on any purchase. BoperCheck analyzes prices in seconds with our advanced AI technology." />
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        color: #1f2937;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 2rem 0;
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        margin-bottom: 2rem;
+      }
+      
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+      
+      .main-content {
+        text-align: center;
+        padding: 2rem 0;
+      }
+      
+      .loading {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 3px solid #e5e7eb;
+        border-top: 3px solid #10b981;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 2rem 0;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+      }
+      
+      .feature {
+        background: #f9fafb;
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: left;
+      }
+      
+      .feature h3 {
+        color: #10b981;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+      
+      .cta-button {
+        background: #10b981;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 1rem 0;
+        display: inline-block;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+      
+      .cta-button:hover {
+        background: #059669;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo">BoperCheck</div>
+        <div class="tagline">Instant AI Price Analysis</div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="main-content">
+        <div class="loading"></div>
+        <h1>AI Price Analysis Loading...</h1>
+        <p>Your intelligent price checking tool is starting up.</p>
+      </div>
+      
+      <div class="features">
+        <div class="feature">
+          <h3>🎯 AI-Powered Analysis</h3>
+          <p>Advanced AI analyzes thousands of prices to find you the best deals available.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>📍 Local Business Integration</h3>
+          <p>Find local suppliers and installers with pricing and contact information.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>⚡ Instant Results</h3>
+          <p>Get comprehensive price comparisons in seconds, not hours.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>💰 Installation Pricing</h3>
+          <p>Compare product prices plus installation costs from verified professionals.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      setTimeout(() => location.reload(), 10000);
+    </script>
+  </body>
+</html>

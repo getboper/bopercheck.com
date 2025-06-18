@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bopercheck.com/sitemap.xml
+
+# Disallow admin paths
+Disallow: /admin/
