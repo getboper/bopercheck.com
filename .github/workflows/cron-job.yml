@@ -1,0 +1,16 @@
+name: Run Deal Scraper
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
+
+jobs:
+  run-deal-scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Supabase Edge Function
+        run: |
+          curl -X POST https://nouijnpwvoomojbqpbkzmp.supabase.co/functions/v1/deal-scraper \
+          -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vdWlqbnB3b29tampvYnBrem1wIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDM2MjY3NSwiZXhwIjoyMDY1OTM4Njc1fQ.vCwoF6z5ZNwT_Jishb9zN6yBFB70njBVjTick0d7Sic" \
+          -H "Content-Type: application/json" \
+          -d '{}'
